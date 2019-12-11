@@ -1,0 +1,3 @@
+/home/mush/code/complier/lex_git/lex/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/mush/code/complier/lex_git/lex/cmake-build-debug/CMakeFiles/lex.dir
+/home/mush/code/complier/lex_git/lex/cmake-build-debug/CMakeFiles/edit_cache.dir
