@@ -9,7 +9,7 @@ using std::stack;
 using std::pair;
 
 
-void re2NFA(vector<RE> rules){
+void re2NFA(vector<RE>& rules,NFA& finalNFA,set<char>& edgeName){
     vector<NFA> singleNFA;
     int count=1;
     for (int i = 0; i < rules.size(); ++i) {
@@ -36,23 +36,6 @@ void re2NFA(vector<RE> rules){
                     start->edges.insert(pair<char,FAnode*>{'#',last1[0]});
                     last1[1]->edges.insert(pair<char,FAnode*>{'#',end});
                     curNFA={start,end};
-//                    last1=temp_res.top();
-//                    temp_res.pop();
-//                    last1[1].edges.insert(pair<char,FAnode&>{'#',last1[0]});
-//                    start=new FAnode;
-//                    end=new FAnode;
-//                    start->id=count++;
-//                    end->id=count++;
-//                    start->edges.insert(pair<char,FAnode&>{'#',*end});
-//                    start->edges.insert(pair<char,FAnode&>{'#',last1[0]});
-//                    last1[1].edges.insert(pair<char,FAnode&>{'#',*end});
-//                    curNFA={*start,*end};
-//                    start.id=count++;
-//                    end.id=count++;
-//                    start.edges.insert(pair<char,FAnode&>{'#',end});
-//                    start.edges.insert(pair<char,FAnode&>{'#',last1[0]});
-//                    last1[1].edges.insert(pair<char,FAnode&>{'#',end});
-//                    curNFA={start,end};
                     temp_res.push(curNFA);
                     break;
                 case '`':
@@ -63,14 +46,6 @@ void re2NFA(vector<RE> rules){
                     last2[1]->edges.insert(pair<char,FAnode*>{'#',last1[0]});
                     curNFA={last2[0],last1[1]};
                     temp_res.push(curNFA);
-
-//                    last1=temp_res.top();
-//                    temp_res.pop();
-//                    last2=temp_res.top();
-//                    temp_res.pop();
-//                    last2[1].edges.insert(pair<char,FAnode&>{'#',last1[0]});
-//                    curNFA={last2[0],last1[1]};
-//                    temp_res.push(curNFA);
                     break;
                 case '|':
                     last1=temp_res.top();
@@ -86,31 +61,6 @@ void re2NFA(vector<RE> rules){
                     last1[1]->edges.insert(pair<char,FAnode*>{'#',end});
                     last2[1]->edges.insert(pair<char,FAnode*>{'#',end});
                     curNFA={start,end};
-
-
-
-//                    last1=temp_res.top();
-//                    temp_res.pop();
-//                    last2=temp_res.top();
-//                    temp_res.pop();
-//                    start=new FAnode;
-//                    end=new FAnode;
-//                    start->id=count++;
-//                    end->id=count++;
-//                    start->edges.insert(pair<char,FAnode&>{'#',last1[0]});
-//                    start->edges.insert(pair<char,FAnode&>{'#',last2[0]});
-//                    last1[1].edges.insert(pair<char,FAnode&>{'#',*end});
-//                    last2[1].edges.insert(pair<char,FAnode&>{'#',*end});
-//                    curNFA={*start,*end};
-
-
-//                    start.id=count++;
-//                    end.id=count++;
-//                    start.edges.insert(pair<char,FAnode&>{'#',last1[0]});
-//                    start.edges.insert(pair<char,FAnode&>{'#',last2[0]});
-//                    last1[1].edges.insert(pair<char,FAnode&>{'#',end});
-//                    last2[1].edges.insert(pair<char,FAnode&>{'#',end});
-//                    curNFA={start,end};
                     temp_res.push(curNFA);
                     break;
                 default:
@@ -118,18 +68,26 @@ void re2NFA(vector<RE> rules){
                     end=new FAnode;
                     start->id=count++;
                     end->id=count++;
-//                    start->edges.insert(pair<char,FAnode&>{j,*end});
                     start->edges.insert(pair<char,FAnode*>{j,end});
+                    edgeName.insert(j);
                     curNFA={start,end};
-//                    start.id=count++;
-//                    end.id=count++;
-//                    start.edges.insert(pair<char,FAnode&>{j,end});
-//                    curNFA={start,end};
                     temp_res.push(curNFA);
             }
-
         }
         singleNFA.push_back(temp_res.top());
+        temp_res.top()[1]->isFinal=true;
+        temp_res.top()[1]->symbol=cur.symbol;
+    }
+
+    finalNFA.push_back(singleNFA[0][0]);
+
+    for (int k = 1; k < singleNFA.size(); ++k) {
+        FAnode* start;
+        start=new FAnode;
+        start->id=count++;
+        start->edges.insert(pair<char,FAnode*>{'#',singleNFA[k][0]});
+        start->edges.insert(pair<char,FAnode*>{'#',finalNFA[0]});
+        finalNFA[0]=start;
     }
 
 }

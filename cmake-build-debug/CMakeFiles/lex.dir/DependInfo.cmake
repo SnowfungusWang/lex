@@ -4,9 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/mush/code/complier/lex_git/lex/NFA2DFA.cpp" "/home/mush/code/complier/lex_git/lex/cmake-build-debug/CMakeFiles/lex.dir/NFA2DFA.cpp.o"
   "/home/mush/code/complier/lex_git/lex/anaREs.cpp" "/home/mush/code/complier/lex_git/lex/cmake-build-debug/CMakeFiles/lex.dir/anaREs.cpp.o"
-  "/home/mush/code/complier/lex_git/lex/main.cpp" "/home/mush/code/complier/lex_git/lex/cmake-build-debug/CMakeFiles/lex.dir/main.cpp.o"
+  "/home/mush/code/complier/lex_git/lex/finalPrgram.cpp" "/home/mush/code/complier/lex_git/lex/cmake-build-debug/CMakeFiles/lex.dir/finalPrgram.cpp.o"
+  "/home/mush/code/complier/lex_git/lex/getTable.cpp" "/home/mush/code/complier/lex_git/lex/cmake-build-debug/CMakeFiles/lex.dir/getTable.cpp.o"
+  "/home/mush/code/complier/lex_git/lex/minDFA.cpp" "/home/mush/code/complier/lex_git/lex/cmake-build-debug/CMakeFiles/lex.dir/minDFA.cpp.o"
   "/home/mush/code/complier/lex_git/lex/re2NFA.cpp" "/home/mush/code/complier/lex_git/lex/cmake-build-debug/CMakeFiles/lex.dir/re2NFA.cpp.o"
+  "/home/mush/code/complier/lex_git/lex/transTable.cpp" "/home/mush/code/complier/lex_git/lex/cmake-build-debug/CMakeFiles/lex.dir/transTable.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

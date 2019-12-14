@@ -123,6 +123,33 @@ lex/fast:
 	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/build
 .PHONY : lex/fast
 
+NFA2DFA.o: NFA2DFA.cpp.o
+
+.PHONY : NFA2DFA.o
+
+# target to build an object file
+NFA2DFA.cpp.o:
+	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/NFA2DFA.cpp.o
+.PHONY : NFA2DFA.cpp.o
+
+NFA2DFA.i: NFA2DFA.cpp.i
+
+.PHONY : NFA2DFA.i
+
+# target to preprocess a source file
+NFA2DFA.cpp.i:
+	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/NFA2DFA.cpp.i
+.PHONY : NFA2DFA.cpp.i
+
+NFA2DFA.s: NFA2DFA.cpp.s
+
+.PHONY : NFA2DFA.s
+
+# target to generate assembly for a file
+NFA2DFA.cpp.s:
+	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/NFA2DFA.cpp.s
+.PHONY : NFA2DFA.cpp.s
+
 anaREs.o: anaREs.cpp.o
 
 .PHONY : anaREs.o
@@ -150,32 +177,86 @@ anaREs.cpp.s:
 	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/anaREs.cpp.s
 .PHONY : anaREs.cpp.s
 
-main.o: main.cpp.o
+finalPrgram.o: finalPrgram.cpp.o
 
-.PHONY : main.o
+.PHONY : finalPrgram.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/main.cpp.o
-.PHONY : main.cpp.o
+finalPrgram.cpp.o:
+	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/finalPrgram.cpp.o
+.PHONY : finalPrgram.cpp.o
 
-main.i: main.cpp.i
+finalPrgram.i: finalPrgram.cpp.i
 
-.PHONY : main.i
+.PHONY : finalPrgram.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/main.cpp.i
-.PHONY : main.cpp.i
+finalPrgram.cpp.i:
+	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/finalPrgram.cpp.i
+.PHONY : finalPrgram.cpp.i
 
-main.s: main.cpp.s
+finalPrgram.s: finalPrgram.cpp.s
 
-.PHONY : main.s
+.PHONY : finalPrgram.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/main.cpp.s
-.PHONY : main.cpp.s
+finalPrgram.cpp.s:
+	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/finalPrgram.cpp.s
+.PHONY : finalPrgram.cpp.s
+
+getTable.o: getTable.cpp.o
+
+.PHONY : getTable.o
+
+# target to build an object file
+getTable.cpp.o:
+	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/getTable.cpp.o
+.PHONY : getTable.cpp.o
+
+getTable.i: getTable.cpp.i
+
+.PHONY : getTable.i
+
+# target to preprocess a source file
+getTable.cpp.i:
+	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/getTable.cpp.i
+.PHONY : getTable.cpp.i
+
+getTable.s: getTable.cpp.s
+
+.PHONY : getTable.s
+
+# target to generate assembly for a file
+getTable.cpp.s:
+	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/getTable.cpp.s
+.PHONY : getTable.cpp.s
+
+minDFA.o: minDFA.cpp.o
+
+.PHONY : minDFA.o
+
+# target to build an object file
+minDFA.cpp.o:
+	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/minDFA.cpp.o
+.PHONY : minDFA.cpp.o
+
+minDFA.i: minDFA.cpp.i
+
+.PHONY : minDFA.i
+
+# target to preprocess a source file
+minDFA.cpp.i:
+	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/minDFA.cpp.i
+.PHONY : minDFA.cpp.i
+
+minDFA.s: minDFA.cpp.s
+
+.PHONY : minDFA.s
+
+# target to generate assembly for a file
+minDFA.cpp.s:
+	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/minDFA.cpp.s
+.PHONY : minDFA.cpp.s
 
 re2NFA.o: re2NFA.cpp.o
 
@@ -204,6 +285,33 @@ re2NFA.cpp.s:
 	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/re2NFA.cpp.s
 .PHONY : re2NFA.cpp.s
 
+transTable.o: transTable.cpp.o
+
+.PHONY : transTable.o
+
+# target to build an object file
+transTable.cpp.o:
+	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/transTable.cpp.o
+.PHONY : transTable.cpp.o
+
+transTable.i: transTable.cpp.i
+
+.PHONY : transTable.i
+
+# target to preprocess a source file
+transTable.cpp.i:
+	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/transTable.cpp.i
+.PHONY : transTable.cpp.i
+
+transTable.s: transTable.cpp.s
+
+.PHONY : transTable.s
+
+# target to generate assembly for a file
+transTable.cpp.s:
+	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/transTable.cpp.s
+.PHONY : transTable.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -213,15 +321,27 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... lex"
 	@echo "... edit_cache"
+	@echo "... NFA2DFA.o"
+	@echo "... NFA2DFA.i"
+	@echo "... NFA2DFA.s"
 	@echo "... anaREs.o"
 	@echo "... anaREs.i"
 	@echo "... anaREs.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... finalPrgram.o"
+	@echo "... finalPrgram.i"
+	@echo "... finalPrgram.s"
+	@echo "... getTable.o"
+	@echo "... getTable.i"
+	@echo "... getTable.s"
+	@echo "... minDFA.o"
+	@echo "... minDFA.i"
+	@echo "... minDFA.s"
 	@echo "... re2NFA.o"
 	@echo "... re2NFA.i"
 	@echo "... re2NFA.s"
+	@echo "... transTable.o"
+	@echo "... transTable.i"
+	@echo "... transTable.s"
 .PHONY : help
 
 

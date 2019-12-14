@@ -7,6 +7,8 @@
 #IncludeRegexTransform: 
 
 /home/mush/code/complier/lex_git/lex/anaREs.cpp
+structs.h
+/home/mush/code/complier/lex_git/lex/structs.h
 string
 -
 set
@@ -17,25 +19,13 @@ map
 -
 vector
 -
+fstream
+-
 algorithm
 -
 iostream
 -
-
-/home/mush/code/complier/lex_git/lex/main.cpp
-iostream
--
-string
--
-vector
--
-structs.h
-/home/mush/code/complier/lex_git/lex/structs.h
-
-/home/mush/code/complier/lex_git/lex/re2NFA.cpp
-structs.h
-/home/mush/code/complier/lex_git/lex/structs.h
-stack
+cstring
 -
 
 /home/mush/code/complier/lex_git/lex/structs.h
@@ -44,6 +34,8 @@ string
 map
 -
 vector
+-
+set
 -
 unordered_map
 -

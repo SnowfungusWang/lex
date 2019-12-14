@@ -1,0 +1,6 @@
+int main () {
+    bool is = true ;
+    int _asdf33 = 11 ;
+    double double1 = 1.11 ;
+    float res = _asdf33 - 5.44 ;
+}

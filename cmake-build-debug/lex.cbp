@@ -84,16 +84,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/mush/code/complier/lex_git/lex/NFA2DFA.cpp">
+			<Option target="lex"/>
+		</Unit>
 		<Unit filename="/home/mush/code/complier/lex_git/lex/anaREs.cpp">
 			<Option target="lex"/>
 		</Unit>
-		<Unit filename="/home/mush/code/complier/lex_git/lex/main.cpp">
+		<Unit filename="/home/mush/code/complier/lex_git/lex/finalPrgram.cpp">
+			<Option target="lex"/>
+		</Unit>
+		<Unit filename="/home/mush/code/complier/lex_git/lex/getTable.cpp">
+			<Option target="lex"/>
+		</Unit>
+		<Unit filename="/home/mush/code/complier/lex_git/lex/minDFA.cpp">
 			<Option target="lex"/>
 		</Unit>
 		<Unit filename="/home/mush/code/complier/lex_git/lex/re2NFA.cpp">
 			<Option target="lex"/>
 		</Unit>
 		<Unit filename="/home/mush/code/complier/lex_git/lex/structs.h">
+			<Option target="lex"/>
+		</Unit>
+		<Unit filename="/home/mush/code/complier/lex_git/lex/transTable.cpp">
 			<Option target="lex"/>
 		</Unit>
 		<Unit filename="/home/mush/code/complier/lex_git/lex/CMakeLists.txt">

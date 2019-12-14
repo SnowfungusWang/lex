@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/lex.dir/main.cpp.o CMakeFiles/lex.dir/anaREs.cpp.o CMakeFiles/lex.dir/re2NFA.cpp.o  -o lex 
+/usr/bin/c++  -g   CMakeFiles/lex.dir/getTable.cpp.o CMakeFiles/lex.dir/anaREs.cpp.o CMakeFiles/lex.dir/re2NFA.cpp.o CMakeFiles/lex.dir/NFA2DFA.cpp.o CMakeFiles/lex.dir/minDFA.cpp.o CMakeFiles/lex.dir/transTable.cpp.o CMakeFiles/lex.dir/finalPrgram.cpp.o  -o lex 

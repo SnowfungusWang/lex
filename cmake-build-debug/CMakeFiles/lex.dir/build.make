@@ -57,18 +57,18 @@ include CMakeFiles/lex.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/lex.dir/flags.make
 
-CMakeFiles/lex.dir/main.cpp.o: CMakeFiles/lex.dir/flags.make
-CMakeFiles/lex.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mush/code/complier/lex_git/lex/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lex.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lex.dir/main.cpp.o -c /home/mush/code/complier/lex_git/lex/main.cpp
+CMakeFiles/lex.dir/getTable.cpp.o: CMakeFiles/lex.dir/flags.make
+CMakeFiles/lex.dir/getTable.cpp.o: ../getTable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mush/code/complier/lex_git/lex/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lex.dir/getTable.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lex.dir/getTable.cpp.o -c /home/mush/code/complier/lex_git/lex/getTable.cpp
 
-CMakeFiles/lex.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lex.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mush/code/complier/lex_git/lex/main.cpp > CMakeFiles/lex.dir/main.cpp.i
+CMakeFiles/lex.dir/getTable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lex.dir/getTable.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mush/code/complier/lex_git/lex/getTable.cpp > CMakeFiles/lex.dir/getTable.cpp.i
 
-CMakeFiles/lex.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lex.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mush/code/complier/lex_git/lex/main.cpp -o CMakeFiles/lex.dir/main.cpp.s
+CMakeFiles/lex.dir/getTable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lex.dir/getTable.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mush/code/complier/lex_git/lex/getTable.cpp -o CMakeFiles/lex.dir/getTable.cpp.s
 
 CMakeFiles/lex.dir/anaREs.cpp.o: CMakeFiles/lex.dir/flags.make
 CMakeFiles/lex.dir/anaREs.cpp.o: ../anaREs.cpp
@@ -96,21 +96,81 @@ CMakeFiles/lex.dir/re2NFA.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lex.dir/re2NFA.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mush/code/complier/lex_git/lex/re2NFA.cpp -o CMakeFiles/lex.dir/re2NFA.cpp.s
 
+CMakeFiles/lex.dir/NFA2DFA.cpp.o: CMakeFiles/lex.dir/flags.make
+CMakeFiles/lex.dir/NFA2DFA.cpp.o: ../NFA2DFA.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mush/code/complier/lex_git/lex/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/lex.dir/NFA2DFA.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lex.dir/NFA2DFA.cpp.o -c /home/mush/code/complier/lex_git/lex/NFA2DFA.cpp
+
+CMakeFiles/lex.dir/NFA2DFA.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lex.dir/NFA2DFA.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mush/code/complier/lex_git/lex/NFA2DFA.cpp > CMakeFiles/lex.dir/NFA2DFA.cpp.i
+
+CMakeFiles/lex.dir/NFA2DFA.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lex.dir/NFA2DFA.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mush/code/complier/lex_git/lex/NFA2DFA.cpp -o CMakeFiles/lex.dir/NFA2DFA.cpp.s
+
+CMakeFiles/lex.dir/minDFA.cpp.o: CMakeFiles/lex.dir/flags.make
+CMakeFiles/lex.dir/minDFA.cpp.o: ../minDFA.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mush/code/complier/lex_git/lex/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/lex.dir/minDFA.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lex.dir/minDFA.cpp.o -c /home/mush/code/complier/lex_git/lex/minDFA.cpp
+
+CMakeFiles/lex.dir/minDFA.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lex.dir/minDFA.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mush/code/complier/lex_git/lex/minDFA.cpp > CMakeFiles/lex.dir/minDFA.cpp.i
+
+CMakeFiles/lex.dir/minDFA.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lex.dir/minDFA.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mush/code/complier/lex_git/lex/minDFA.cpp -o CMakeFiles/lex.dir/minDFA.cpp.s
+
+CMakeFiles/lex.dir/transTable.cpp.o: CMakeFiles/lex.dir/flags.make
+CMakeFiles/lex.dir/transTable.cpp.o: ../transTable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mush/code/complier/lex_git/lex/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/lex.dir/transTable.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lex.dir/transTable.cpp.o -c /home/mush/code/complier/lex_git/lex/transTable.cpp
+
+CMakeFiles/lex.dir/transTable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lex.dir/transTable.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mush/code/complier/lex_git/lex/transTable.cpp > CMakeFiles/lex.dir/transTable.cpp.i
+
+CMakeFiles/lex.dir/transTable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lex.dir/transTable.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mush/code/complier/lex_git/lex/transTable.cpp -o CMakeFiles/lex.dir/transTable.cpp.s
+
+CMakeFiles/lex.dir/finalPrgram.cpp.o: CMakeFiles/lex.dir/flags.make
+CMakeFiles/lex.dir/finalPrgram.cpp.o: ../finalPrgram.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mush/code/complier/lex_git/lex/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/lex.dir/finalPrgram.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lex.dir/finalPrgram.cpp.o -c /home/mush/code/complier/lex_git/lex/finalPrgram.cpp
+
+CMakeFiles/lex.dir/finalPrgram.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lex.dir/finalPrgram.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mush/code/complier/lex_git/lex/finalPrgram.cpp > CMakeFiles/lex.dir/finalPrgram.cpp.i
+
+CMakeFiles/lex.dir/finalPrgram.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lex.dir/finalPrgram.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mush/code/complier/lex_git/lex/finalPrgram.cpp -o CMakeFiles/lex.dir/finalPrgram.cpp.s
+
 # Object files for target lex
 lex_OBJECTS = \
-"CMakeFiles/lex.dir/main.cpp.o" \
+"CMakeFiles/lex.dir/getTable.cpp.o" \
 "CMakeFiles/lex.dir/anaREs.cpp.o" \
-"CMakeFiles/lex.dir/re2NFA.cpp.o"
+"CMakeFiles/lex.dir/re2NFA.cpp.o" \
+"CMakeFiles/lex.dir/NFA2DFA.cpp.o" \
+"CMakeFiles/lex.dir/minDFA.cpp.o" \
+"CMakeFiles/lex.dir/transTable.cpp.o" \
+"CMakeFiles/lex.dir/finalPrgram.cpp.o"
 
 # External object files for target lex
 lex_EXTERNAL_OBJECTS =
 
-lex: CMakeFiles/lex.dir/main.cpp.o
+lex: CMakeFiles/lex.dir/getTable.cpp.o
 lex: CMakeFiles/lex.dir/anaREs.cpp.o
 lex: CMakeFiles/lex.dir/re2NFA.cpp.o
+lex: CMakeFiles/lex.dir/NFA2DFA.cpp.o
+lex: CMakeFiles/lex.dir/minDFA.cpp.o
+lex: CMakeFiles/lex.dir/transTable.cpp.o
+lex: CMakeFiles/lex.dir/finalPrgram.cpp.o
 lex: CMakeFiles/lex.dir/build.make
 lex: CMakeFiles/lex.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mush/code/complier/lex_git/lex/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable lex"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mush/code/complier/lex_git/lex/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable lex"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lex.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

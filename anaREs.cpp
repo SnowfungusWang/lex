@@ -2,13 +2,16 @@
 // Created by mush on 2019/12/10.
 //
 
+#include"structs.h"
 #include<string>
 #include<set>
 #include<stack>
 #include<map>
 #include<vector>
+#include<fstream>
 #include<algorithm>
 #include<iostream>
+#include <cstring>
 
 
 using std::string;
@@ -17,8 +20,31 @@ using std::set;
 using std::vector;
 using std::iostream;
 using std::map;
+using std::fstream;
 //using std::algorithm;
+string addDot(string in);
+string infix2Shuffix(string in);
 
+void getREs(vector<RE>& reFinal){
+    fstream in("./re",std::ios::in);
+    while(!in.eof()){
+        string cur;
+        getline(in,cur);
+        char* buffer;
+        char* token;
+        char *curC = new char[cur.size()];
+        strcpy(curC,cur.c_str());
+        token= strtok_r(curC, " ", &buffer);
+        RE* curRE=new RE;
+        curRE->symbol=token;
+        token= strtok_r(NULL," ",&buffer);
+        string tempRe=token;
+        tempRe=infix2Shuffix(addDot(tempRe));
+        curRE->re=tempRe;
+        reFinal.push_back(*curRE);
+        delete curC;
+    }
+}
 
 
 string addDot(string in){
@@ -30,7 +56,8 @@ string addDot(string in){
         if((symbolList.find(in[i])==symbolList.end()&&symbolList.find(temp[pos])==symbolList.end())
         ||(temp[pos]==')'&&in[i]=='(')
         ||(temp[pos]==')'&&symbolList.find(in[i])==symbolList.end())
-        ||(in[i]=='('&&symbolList.find(temp[pos])==symbolList.end())
+        ||((in[i]=='('&&symbolList.find(temp[pos])==symbolList.end())
+        ||(temp[pos]=='*'&&symbolList.find(in[i])==symbolList.end()))
         ){
             temp[++pos]='`';
             temp[++pos]=in[i];
